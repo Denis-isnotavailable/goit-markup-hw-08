@@ -2,30 +2,15 @@
     @extend %visually-hidden;
 }
 
-
 // PORTFOLIO BUTTONS
 
 .portfolio-buttons {
     display: flex;
-    flex-wrap: wrap;
-
-    max-width: 362px;
-    margin-bottom: 40px;
-    
+    flex-wrap: wrap;   
 }
 
-.portfolio-buttons__item {
-    &:not(:last-child) {
-        margin-right: 8px;
-    }
-
-    &:nth-child(-n + 3) {
-        margin-bottom: 30px;
-    }
-
-    &:nth-child(3) {
-        margin-right: 0;
-    }
+.portfolio-buttons__item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .portfolio-buttons__button {
@@ -67,6 +52,7 @@
 }
 
 .portfolio-card__link {
+    display: block;
     @include transitionOne(box-shadow);
 
     &:hover,
@@ -111,8 +97,7 @@
     padding: 20px 24px;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    // border-radius: 0px 0px 4px 4px; no radius in mob version
+    border-bottom: 1px solid #EEEEEE;    
 }
 
 .portfolio-card__title {
@@ -130,6 +115,72 @@
     font-size: 16px;
     line-height: 1.88;
 
+}
+
+@media screen and (max-width: 767px) {
+    .portfolio-buttons {
+        max-width: 362px;
+        margin-bottom: 40px;
+    }
+
+    .portfolio-buttons__item {
+        &:nth-child(-n + 3) {
+            margin-bottom: 30px;
+        }
+
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .portfolio-list {
+        justify-content: flex-start;
+    }
+
+    .portfolio-buttons {        
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    .portfolio-card {
+        width: calc((100% - 30px) / 2);        
+
+        &:nth-child(2n - 1) {
+            margin-right: 30px;
+        }        
+    }
+
+    .portfolio-card:nth-child(1) {
+        .portfolio-card__card-description {
+            padding-bottom: 56px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {    
+
+    .portfolio-buttons {
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+
+    .portfolio-card {
+        width: calc((100% - 60px) / 3);
+
+        &:not(&:nth-child(3n)) {
+            margin-right: 30px;
+        }
+
+        &:not(:nth-last-child(-n + 3)) {
+            margin-bottom: 30px;
+        }
+
+        &:nth-last-child(-n + 3) {
+            margin-bottom: 0;
+        }
+    }
 }
 
 

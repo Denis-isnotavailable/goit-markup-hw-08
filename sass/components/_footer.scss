@@ -13,9 +13,12 @@
 
 // REQUISITES
 
-.address {
-    margin-top: 20px;
+.requisites {    
     margin-bottom: 60px; // difference
+}
+
+.address {
+    margin-top: 20px;    
 }
 
 .address-list__item:not(.address-list__item:last-child) {
@@ -28,7 +31,6 @@
     font-size: 14px;
     font-style: normal;
     line-height: 1.71;
-    text-decoration: none;
 }
 
 .address-list__link--location {
@@ -38,7 +40,7 @@
 // ADD-US IN SOCIAL NETWORKS
 
 .add-us {
-    margin-bottom: 60px;
+    margin-bottom: 60px; // difference
 }
 
 .add-us__title,
@@ -71,7 +73,7 @@
 .subscribe-form__input {
     display: inline-block;  
     width: 100%;  
-    max-width: 450px;
+    max-width: 450px; // difference
     height: 50px;
     padding: 15px 16px;
     margin-bottom: 20px;
@@ -81,7 +83,7 @@
     background-color: transparent;
 }
 
-::placeholder { // difference
+::placeholder { // add to desktop too
     font-size: 16px;
     line-height: 1.25;    
 
@@ -104,5 +106,22 @@
 .subscribe-form__icon {
     margin-left: 10px;
 }
+
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer__tablet-thumb {
+        display: flex;
+        justify-content: center;
+    }
+
+    .requisites {
+        margin-right: 166px;
+    }
+}
+
+
 
 
