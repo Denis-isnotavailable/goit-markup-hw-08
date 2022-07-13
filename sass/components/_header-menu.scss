@@ -1,0 +1,128 @@
+@media screen and (max-width: 767px) {
+    .header__container {
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .menu-container {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+        padding: 0 40px 48px 40px;
+
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        line-height: 1.18;
+
+        background-color: $white;
+
+        &.is-open {
+            display: block;
+        }
+    }
+
+    .button-menu {
+        display: block;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+
+        @include transitionOne(fill);
+
+        &:hover,
+        &:focus {
+            fill: $accent-color;
+        }
+    }
+
+    .button-menu__close {
+        display: none;
+    }
+
+    .is-open {
+        & .button-menu__close {
+            display: block;
+        }
+
+        & .button-menu__open {
+            display: none;
+        }
+    }    
+
+    .site-nav {
+        margin-bottom: 302px;
+    }
+
+    .site-nav__item:not(:last-child),
+    .contacts__item:not(:first-child) {
+        padding-bottom: 32px;
+    }
+
+    .site-nav__link {
+        font-size: 40px;
+
+        color: $title-text-color;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 64px;
+    }
+
+    .contacts__item:nth-child(1) {
+        order: 2;
+        font-size: 24px;
+        line-height: 1.17;
+    }
+
+    .contacts__item:nth-child(2) {
+        order: 1;
+        font-size: 34px;
+        color: $accent-color;
+    }
+
+    .contacts__link {
+        color: inherit;
+    }
+
+    .contacts__icon {
+        display: none;
+    }
+
+    .header__social-networks {
+        display: inline;
+        // flex-direction: row;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+            border-right: none;
+        }
+
+        font-size: 18px;
+        line-height: 1.22;
+
+
+        color: $accent-color;
+    }
+
+    .active {
+        color: $accent-color;
+    }
+
+}

@@ -1,0 +1,108 @@
+.footer {    
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    background-color: #2F303A;
+}
+
+.footer__container {
+    display: blok;
+    text-align: center;
+    
+}
+
+// REQUISITES
+
+.address {
+    margin-top: 20px;
+    margin-bottom: 60px; // difference
+}
+
+.address-list__item:not(.address-list__item:last-child) {
+    margin-bottom: 8px;
+}
+
+.address-list__link {
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    text-decoration: none;
+}
+
+.address-list__link--location {
+    color: $white;
+}
+
+// ADD-US IN SOCIAL NETWORKS
+
+.add-us {
+    margin-bottom: 60px;
+}
+
+.add-us__title,
+.subscribe__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    color: $white;
+}
+
+.footer__social-networks {
+    background-color: rgba(255, 255, 255, 0.1);
+
+    fill: $white;
+}
+
+
+// SUBSCRIBE FORM
+
+// title added to .add-us__title
+
+.subscribe-form {
+    display: block;
+    width: auto;
+    text-align: center;
+}
+
+.subscribe-form__input {
+    display: inline-block;  
+    width: 100%;  
+    max-width: 450px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);        
+    border-radius: 4px;
+
+    background-color: transparent;
+}
+
+::placeholder { // difference
+    font-size: 16px;
+    line-height: 1.25;    
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-form__button {
+    @extend %button;
+
+    display: flex;
+    margin-left: auto; // difference
+    margin-right: auto; // difference
+    align-items: center;
+    justify-content: center;
+
+    padding-right: 28px;
+    padding-left: 29px;
+}
+
+.subscribe-form__icon {
+    margin-left: 10px;
+}
+
+
