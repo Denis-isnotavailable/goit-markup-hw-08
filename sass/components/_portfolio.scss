@@ -1,0 +1,135 @@
+.portfolio__title {
+    @extend %visually-hidden;
+}
+
+
+// PORTFOLIO BUTTONS
+
+.portfolio-buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 362px;
+    margin-bottom: 40px;
+    
+}
+
+.portfolio-buttons__item {
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    &:nth-child(-n + 3) {
+        margin-bottom: 30px;
+    }
+
+    &:nth-child(3) {
+        margin-right: 0;
+    }
+}
+
+.portfolio-buttons__button {
+    padding: 6px 22px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+
+    cursor: pointer;
+    background-color: #F5F4FA;
+    color: $title-text-color;
+
+    border: none;
+    border-radius: 4px;
+
+    @include transitionThree(background-color, color, box-shadow);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $white;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+// PORTFOLIO CARDS
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-card:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.portfolio-card__link {
+    @include transitionOne(box-shadow);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.portfolio-card__thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-card__image-description {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    padding: 77px 24px;
+
+    font-size: 18px;
+    line-height: 1.56;
+
+    background-color: rgba(33, 150, 243, 0.9);
+    color: $white;
+
+    transform: translateY(0);
+
+    @include transitionOne(transform);
+
+    .portfolio-card__link:hover &,
+    .portfolio-card__link:focus & {
+        transform: translateY(-100%);
+    }
+}
+
+.portfolio-card__card-description {
+    padding: 20px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    // border-radius: 0px 0px 4px 4px; no radius in mob version
+}
+
+.portfolio-card__title {
+    margin-bottom: 4px;
+
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: $title-text-color;    
+}
+
+.portfolio-card__text {
+    color: $main-text-color;
+    font-size: 16px;
+    line-height: 1.88;
+
+}
+
+

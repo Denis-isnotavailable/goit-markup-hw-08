@@ -3,7 +3,8 @@
     height: 400px; //difference
     margin-left: auto;
     margin-right: auto;
-    padding: 118px 60px 118px 60px; //difference
+    padding-top: 118px;
+    padding-bottom: 118px; //difference    
 
     background-color: #c4c4c4;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/hero@1x.jpg);
@@ -52,7 +53,8 @@
 
 
 .hero__title {
-    max-width: 360px; //difference
+    width: 360px; //difference
+    height: 84px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;

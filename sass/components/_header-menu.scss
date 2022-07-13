@@ -9,14 +9,15 @@
     }
 
     .menu-container {
+        z-index: 900;
         display: none;
 
         position: absolute;
-        top: 100%;
+        top: 0;
         left: 0;
 
         width: 100%;
-        padding: 0 40px 48px 40px;
+        padding: 48px 40px 48px 40px;
 
         font-weight: 500;
         letter-spacing: 0.02em;
@@ -30,6 +31,7 @@
     }
 
     .button-menu {
+        z-index: 901;
         display: block;
         padding: 0;
         border: none;
@@ -100,7 +102,7 @@
 
     .header__social-networks {
         display: inline;
-        // flex-direction: row;
+        
         padding-right: 10px;
         padding-left: 10px;
         border-right: 1px solid rgba(33, 33, 33, 0.2);
