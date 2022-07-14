@@ -18,3 +18,15 @@
 
     fill: #AFB1B8;
 }
+
+@media screen and (min-width: 1200px){
+    .social-networks__link {
+        @include transitionTwo(background-color, fill);
+
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+            fill: $white;
+        }
+    }
+}    

@@ -25,7 +25,7 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
 
-    width: 450px;
+    width: 450px; 
     height: 609px;
     padding: 40px;
 
@@ -71,7 +71,7 @@
     margin-bottom: 12px;
 
     font-size: 20px;
-    line-height: 1.5; //difference
+    line-height: 1.5;
     text-align: center;    
 
     color: $title-text-color;
@@ -82,7 +82,7 @@
     flex-direction: column;
     justify-content: center;
 
-    width: 370px; //difference
+    width: 370px;
 }
 
 .modal-form__item:not(.modal-form__item:last-child) {
@@ -115,7 +115,7 @@
 }
 
 .modal-form__input {
-    width: 370px; //difference
+    width: 370px;
     height: 40px;
     padding: 0;
     padding-left: 42px;
@@ -151,13 +151,12 @@
 }
 
 .label-check {
-    height: 15px; // differnce
     display: flex;
     align-items: center;
     margin-bottom: 30px;
 
-    font-size: 12px; // differnce
-    line-height: 1.14px; // differnce
+    font-size: 12px;
+    line-height: 1.14px;
 }
 
 .label-check__input {
@@ -190,8 +189,8 @@
 }
 
 .label-check__link {    
-    font-size: 12px; // differnce
-    line-height: 1.14; // differnce
+    font-size: 12px;
+    line-height: 1.14;
 
     text-decoration: underline;
     color: $accent-color;
@@ -210,4 +209,29 @@
     &:focus {
             background-color: $button-hover;
         }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal {       
+        width: 528px;
+        height: 581px;       
+    }
+
+    .modal__title {            
+        line-height: 1.15;            
+    }
+
+    .modal-form {
+        width: 448px;
+    }
+
+    .modal-form__input {
+        width: 448px;        
+    }
+
+    .label-check, 
+    .label-check__link {        
+        font-size: 14px;
+        line-height: 1.71px;
+    }
 }
