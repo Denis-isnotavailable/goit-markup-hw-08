@@ -6,8 +6,7 @@
     @extend %studioTitle;
 }
 
-.team-card {    
-    padding-bottom: 24px;
+.team-card {
 
     background-color: $white;
 
@@ -38,10 +37,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .team-card {
-        max-width: 450px;        
-        margin-left: auto;
-        margin-right: auto;        
+    .team-card {                  
 
         &:not(:last-child) {
             margin-bottom: 30px;

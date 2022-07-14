@@ -29,19 +29,10 @@
     line-height: 1.71;
 }
 
-@media screen and (max-width: 767px) {
-    .about__list {
-        max-width: 450px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+@media screen and (max-width: 767px) {   
 
     .benefits-item:not(:last-child) {
         margin-bottom: 30px;
-    }
-
-    .benefits-item__icon-box {        
-        max-width: 450px;        
     }
 }
 

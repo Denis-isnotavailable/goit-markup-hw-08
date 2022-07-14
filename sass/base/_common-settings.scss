@@ -19,21 +19,25 @@ body {
 }
 
 .container {
+
+    @media screen and (max-width: 767px) {    
+    
+            .tablet {
+                display: none;
+            }
+    
+            .desktop {
+                display: none;
+            }
+        }
    
 
-    @media screen and (max-width: 767px) {
-        width: auto;
-
-        .tablet {
-            display: none;
-        }
-        .desktop {
-            display: none;
-        }
-}
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 480px;
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        max-width: 768px;
+        width: 768px;
 
         .mobile {
             display: none;
@@ -45,7 +49,7 @@ body {
     }
 
     @media screen and (min-width: 1200px) {
-        max-width: 1200px;
+        width: 1200px;
 
         .mobile {
             display: none;
@@ -57,7 +61,7 @@ body {
         
     }
     
-    min-width: 320px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
