@@ -23,7 +23,7 @@
     }
 
     .site-nav {
-        margin-bottom: 302px;
+        margin-bottom: calc(100vh - 487px);
     }
 
     .site-nav__item:not(:last-child),
@@ -37,7 +37,7 @@
         color: $title-text-color;
     }
 
-    .contacts {
+    .contacts {        
         display: flex;
         flex-direction: column;
         margin-bottom: 64px;

@@ -149,7 +149,7 @@ a {
     padding: 10px;
   }
   .site-nav {
-    margin-bottom: 302px;
+    margin-bottom: calc(100vh - 487px);
   }
   .site-nav__item:not(:last-child),
 .contacts__item:not(:first-child) {
