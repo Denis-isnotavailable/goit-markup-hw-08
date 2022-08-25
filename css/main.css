@@ -445,7 +445,7 @@ a {
   background-color: #188CE8;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .hero {
     height: 400px;
     padding-top: 118px;
