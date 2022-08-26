@@ -1,4 +1,8 @@
-@media screen and (max-width: 767px) {    
+@media screen and (max-width: 767px) {
+    body.overflow-hidden {        
+        overflow: hidden;
+    }
+
     .menu-container {
         z-index: 900;
         display: none;
@@ -42,7 +46,7 @@
     }
 
     .is-open {
-        & .button-menu__close {
+        & .button-menu__close {            
             display: block;
         }
 
